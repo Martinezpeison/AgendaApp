@@ -29,4 +29,5 @@ public abstract class Contact {
     public void setAddress(String street, int number, int floor, String city) {
         this.address = new Address(street, number, floor, city);
     }
+    public
 }

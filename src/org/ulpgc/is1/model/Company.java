@@ -1,6 +1,6 @@
 package org.ulpgc.is1.model;
 
-public class Company extends Contact{
+public abstract class Company extends Contact{
     private String name;
     private String descripcion;
 
@@ -8,6 +8,9 @@ public class Company extends Contact{
         super(telephone, email);
         this.name = name;
         this.descripcion = descripcion;
+        setAddress(street, number, floor, city);
+        setEmail(email);;
+        setTelephone(telephone);
     }
 
     public String getName() {
