@@ -1,6 +1,6 @@
 package org.ulpgc.is1.model;
 
-public class Adress extends Contact {
+public class Adress {
     private String street;
     private int number;
     private int floor;
@@ -38,6 +38,16 @@ public class Adress extends Contact {
         this.city = city;
     }
 
+    @Override
+    public String toString() {
+        return "Adress{" +
+                "street='" + street + '\'' +
+                ", number=" + number +
+                ", floor=" + floor +
+                ", city='" + city + '\'' +
+                '}';
+    }
+
     public Adress(String telephone, String email, String street, int number, int floor, String city) {
         super(telephone, email);
         this.street = street;
@@ -46,4 +56,5 @@ public class Adress extends Contact {
         this.city = city;
 
     }
+
 }

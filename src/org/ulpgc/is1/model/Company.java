@@ -4,7 +4,7 @@ public class Company extends Contact{
     private String name;
     private String descripcion;
 
-    public Company(String telephone, String email, String name, String descripcion) {
+    public Company(String telephone, String email, String name, String descripcion, String street, int number, int floor, String city) {
         super(telephone, email);
         this.name = name;
         this.descripcion = descripcion;
